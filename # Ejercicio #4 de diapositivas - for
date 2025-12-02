@@ -1,0 +1,26 @@
+# Ejercicio #4 de diapositivas - for.
+
+# Crear un programa que solicite la cantidad de números que el usuario va a digitar y calcular el acumulado de la lista de números entrados por consola.
+
+# ZONA DE FUNCIONES.
+ 
+def pedir_cantidad():
+    return int(input("Digite la cantidad de números para sumar: "))
+
+def acumular_suma(cantidad):
+    suma = 0
+    for i in range(cantidad):
+        print("Digite el número", i + 1, ": ", end="")
+        numero = int(input())
+        suma = suma + numero
+    return suma
+
+def mostrar_total(suma):
+    print("La sumatoria total es:", suma)
+
+# CÓDIGO PRINCIPAL.
+
+cantidad = pedir_cantidad()
+suma_total = acumular_suma(cantidad)
+mostrar_total(suma_total)
+
