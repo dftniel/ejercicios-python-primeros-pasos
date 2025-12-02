@@ -20,7 +20,8 @@ def mostrar_total(suma):
 
 # CÓDIGO PRINCIPAL.
 
-cantidad = pedir_cantidad()
-suma_total = acumular_suma(cantidad)
-mostrar_total(suma_total)
+cantidad = pedir_cantidad() # Esta función la utilizo para solicitarle al cliente cuántos números sumará
+suma_total = acumular_suma(cantidad) # Esta función se utiliza para sumar los números dependiendo de la cantidad 
+mostrar_total(suma_total) # Esta función se utiliza para mostrarle el resultado al cliente de la operación que se realizó
+
 
